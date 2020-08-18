@@ -1,0 +1,77 @@
+h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 80px;
+    color: #000000;
+    }
+h2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 0px;
+    color: #000000;
+}
+h3 {
+    font-family: Lato;
+    display: inline-flexbox;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 5.5;
+    color: white;
+    margin: 30px;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+.wrapper {
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+.navigation {
+    background: radial-gradient(
+    ellipse at center,
+    rgb(78, 31, 204) 0%,
+    rgb(78, 31, 204) 70%,
+    rgba(109, 54, 172, 0) 70.3%
+  );
+  height: 100%;
+  width: 100%;
+}
+.navigation::before {
+  float: right;
+  width: 50%;
+  height: 100%;
+  shape-outside: polygon(
+          0 0,
+          98% 0,
+          50% 6%,
+          23.4% 17.3%,
+          6% 32.6%,
+          0 50%,
+          6% 65.6%,
+          23.4% 82.7%,
+          50% 94%,
+          98% 100%,
+          0 100%
+        );
+        shape-margin: 7%;
+      }
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+  grid-column-gap: 20px;
+}
+.empty {
+  width: 100px;
+  height: auto;
+  line-height: 80px;
+}
+.name {
+  width: 300px;
+  height: 100px;
+}
